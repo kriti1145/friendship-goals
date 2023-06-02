@@ -9,7 +9,7 @@
     <body>
         
         <section id="banner">
-            <img src="E:\dbms\logo (2).png" class="logo">
+            <img src="friends.png" class="logo" href="#banner">
             <div class="banner-text">
                 <h1>Friendship Goal</h1>
                 <p>We Tie Until We Die</p>
@@ -30,7 +30,7 @@
         </nav>  
     </div>
         <div id="menuBtn">
-             <img src="menu.png" id="menu">
+             <img src="./menu.png" id="menu">
         </div>
         
 <!--Login-->
@@ -41,7 +41,7 @@
         </div>
     </section>
 <div class="loginbox">
-        <img src="avatar.png" class="avatar">
+        <img src="./avatar.png" class="avatar">
           <h1>Login Here</h1>
     <form class="login-form" method="post">
     <p>Email or Phone</p>
@@ -50,11 +50,29 @@
         <input type="password" name="" placeholder="Enter Password">
         <input type="submit" name="" value="Login">
         <a href="#">Lost Your Password?</a><br>
-        <a href="#">Don't have an account?</a>
+        <a href="#popup">Don't have an account?</a>
     </form>
         </div>   
     
-        
+     
+ <!--pop up after login-->
+    <!--<button type="submit" class="bt" onclick="openPopup()">Submit</button>-->
+    <div class="pop" id="popup">
+        <img src="tick.jpg">
+        <h2>Thank You!!</h2>
+        <p>You're loggedd in successfully!!</p>
+        <button type="button" onclick="closePopup()" href="#banner">OK</button>
+ </div>
+ <script>
+    let popup = document.getElementById("popup");
+   /* function openPopup(){
+        pop.classlist.add("open-popup");
+    }*/
+    function closePopup(){
+        pop.classlist.remove("open-popup");
+    }
+ </script> 
+               
         
 <!--galary-->   
     <section id="Gallary">
@@ -64,19 +82,19 @@
         </div>
         <div class="sevice-box">
             <div class="single-sevice">
-               <img src="E:\dbms\2.jpeg">
+               <img src="./2.jpeg">
                 <div class="overlay"></div>
             </div>
             <div class="single-sevice">
-            <img src="E:\dbms\5.jpeg">
+            <img src="./5.jpeg">
                 <div class="overlay"></div>
             </div>
             <div class="single-sevice">
-            <img src="E:\dbms\1.jpeg">
+            <img src="./1.jpeg">
                 <div class="overlay"></div>
             </div>
             <div class="single-sevice">
-            <img src="E:\dbms\6.jpeg">
+            <img src="./6.jpeg">
                 <div class="overlay"></div>
             </div>
         </div>
@@ -92,7 +110,7 @@
             <div class="test-row">
             <div class="test-col">
                 <div class="user">
-                <img src="E:\dbms\t2.jpeg">
+                <img src="./t2.jpeg">
                 <div class="user-info">
                     <h4>ROHINI SINGH</h4>
                     <small>GCS/2231054</small>
@@ -103,7 +121,7 @@
                 
                 <div class="test-col">
                     <div class="user">
-                <img src="E:\dbms\t3.jpeg">
+                <img src="./t3.jpeg">
                 <div class="user-info">
                     <h4>RISHIKA KUMARI</h4>
                     <small>GCS/2231063</small>
@@ -114,7 +132,7 @@
                 
                 <div class="test-col">
                     <div class="user">
-                <img src="E:\dbms\t1.jpeg">
+                <img src="./t1.jpeg">
                 <div class="user-info">
                     <h4>SHIWANI SINGH</h4>
                     <small>MBBS</small>
@@ -125,6 +143,12 @@
                 
             </div>
         </section>
+<!--footer -->
+<footer id="bottoms">
+    <div class="text-footer">
+        --------------   @made-by-kriti   --------------
+    </div>
+</footer>
         
 <script>
     var menuBtn = document.getElementById("menuBtn");
